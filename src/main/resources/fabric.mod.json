@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "server-reload",
+  "version": "${version}",
+  "name": "Server Reload",
+  "description": "Server-side: broadcasts a nicely formatted message whenever the server data is hot-reloaded (/reload), with timing and success/fail status. Players install nothing.",
+  "authors": ["Glance Studios"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "server": [
+      { "adapter": "kotlin", "value": "dev.serverreload.ServerReloadMod" }
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*",
+    "fabric-language-kotlin": ">=1.13"
+  }
+}
